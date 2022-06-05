@@ -1,0 +1,12 @@
+<p>login works!</p>
+<form [formGroup]="loginForm" (submit)="onSubmit()">
+    <div>
+        <label for="username">Email</label>
+        <input type="email" id="username" name="email" formControlName="email" />
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" formControlName="password" />
+    </div>
+    <button type="submit">Login</button>
+</form>
